@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PeritoCRIM | João - Futuro Perito Criminal</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+    body{
+        background:#020617;
+        overflow-x:hidden;
+    }
+
+    .hero-bg{
+        background:
+        linear-gradient(rgba(2,6,23,.88),rgba(2,6,23,.95)),
+        url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070') center/cover no-repeat;
+    }
+
+    .glow{
+        box-shadow:0 0 50px rgba(220,38,38,.35);
+    }
+
+    .card{
+        backdrop-filter: blur(18px);
+        background: rgba(15,23,42,.65);
+        border:1px solid rgba(255,255,255,.08);
+    }
+
+    .foto-perfil{
+        transition:.4s ease;
+    }
+
+    .foto-perfil:hover{
+        transform:scale(1.03);
+    }
+
+    .gradient-text{
+        background:linear-gradient(90deg,#ef4444,#dc2626);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+</style>
+</head>
+
+<body class="text-white font-sans">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-red-700 rounded-xl flex items-center justify-center">
+                <i class="fa-solid fa-microscope"></i>
+            </div>
+            <h1 class="text-3xl font-bold">Perito<span class="text-red-600">CRIM</span></h1>
+        </div>
+
+        <div class="hidden md:flex gap-8 text-zinc-300">
+            <a href="#sobre" class="hover:text-red-500">Sobre</a>
+            <a href="#caminho" class="hover:text-red-500">Caminho</a>
+            <a href="#habilidades" class="hover:text-red-500">Habilidades</a>
+        </div>
+
+        <button class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-2xl font-semibold">
+            Quero ser Perito
+        </button>
+
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center pt-24">
+<div class="max-w-7xl mx-auto px-6">
+
+<div class="grid md:grid-cols-2 gap-16 items-center">
+
+<!-- TEXTO -->
+<div>
+
+<div class="inline-flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full mb-8">
+    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+    Futuro Perito Criminal
+</div>
+
+<h1 class="text-6xl md:text-7xl font-black leading-tight">
+    Da Biomedicina<br>
+    para a<br>
+    <span class="gradient-text">Perícia Criminal</span>
+</h1>
+
+<p class="text-xl text-zinc-300 mt-8 max-w-xl leading-relaxed">
+    Transformando conhecimento científico em investigação forense, 
+    justiça e busca pela verdade.
+</p>
+
+<div class="flex gap-4 mt-10">
+    <button class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-2xl font-bold">
+        Ver meu caminho
+    </button>
+
+    <button class="border border-zinc-600 hover:border-white px-8 py-4 rounded-2xl font-bold">
+        Conhecer mais
+    </button>
+</div>
+
+</div>
+
+<!-- FOTO -->
+<div class="relative flex justify-center">
+
+    <div class="absolute inset-0 bg-red-700 blur-[120px] opacity-25 rounded-full"></div>
+
+    <div class="relative card rounded-[32px] p-5 glow">
+
+        <!-- TROQUE O NOME DA FOTO -->
+        <img
+        src="foto-perito.png"
+        alt="João Perito Criminal"
+        class="foto-perfil w-[500px] rounded-3xl">
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 card px-8 py-4 rounded-3xl flex gap-5 items-center">
+            <span class="font-semibold">João - Futuro Perito Criminal</span>
+
+            <span class="bg-green-600 px-4 py-2 rounded-full text-sm font-bold">
+                Biomédico em Formação
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-28 bg-slate-950">
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-5xl font-bold mb-8">
+Seu futuro começa agora
+</h2>
+
+<p class="text-zinc-400 text-xl max-w-3xl mx-auto">
+A perícia criminal une ciência, investigação e justiça.
+Seu caminho na Biomedicina é a base perfeita para chegar lá.
+</p>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="py-28 bg-gradient-to-r from-red-900 to-red-700 text-center">
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="text-5xl font-black mb-6">
+Vamos transformar isso em realidade?
+</h2>
+
+<p class="text-xl mb-10">
+O próximo perito criminal pode ser você.
+</p>
+
+<button onclick="alert('João, seu caminho está traçado: Biomedicina + Pós em Ciências Forenses + Concurso Público 🚀')"
+class="bg-white text-red-700 hover:bg-zinc-100 px-10 py-5 rounded-3xl font-bold text-xl">
+Iniciar minha jornada
+</button>
+
+</div>
+</section>
+
+<footer class="py-10 text-center text-zinc-500 border-t border-slate-800">
+PeritoCRIM • João • Futuro Perito Criminal
+</footer>
+
+</body>
+</html>
